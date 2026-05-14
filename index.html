@@ -17,14 +17,14 @@
 
             <div id="inicio">
 
-                <h1>Íris Helena ✨💜🐾</h1>
+                <h1>Íris Helena ✨💜🐾😺</h1>
 
                 <p class="subtitle">
-                    Íris Helena, pronta para a surpresa? ✨💖🐾
+                    Pronta para a surpresa? ✨💖🐾😺
                 </p>
 
                 <button onclick="mostrarMensagem()">
-                    SIM 💜✨
+                    SIM 💜✨😺
                 </button>
 
             </div>
@@ -35,32 +35,32 @@
 
                 <div class="card">
 
-                    <h2>Uma homenagem especial 💜✨🌙</h2>
+                    <h2>Uma homenagem especial 💜✨🌙🐾</h2>
 
                     <p>
                         Existem pessoas que conseguem deixar tudo melhor apenas
-                        com a própria presença ✨🐾💖
+                        com a própria presença ✨🐾💖😺
                     </p>
 
                     <p>
                         Seu jeito gentil, sua dedicação e sua energia fazem
-                        diferença mais do que imagina 🌸💜✨
+                        diferença mais do que imagina 🌸💜✨🐈
                     </p>
 
                     <p>
                         Pessoas incríveis são raras. E você consegue ser ainda
-                        mais do que isso: admirável, forte, inteligente e maravilhosa 💖✨🐾
+                        mais do que isso: admirável, forte, inteligente e maravilhosa 💖✨🐾😺
                     </p>
 
                     <p>
                         Essa página é apenas uma pequena forma de mostrar
-                        o quanto você é especial 🌙💜✨
+                        o quanto você é especial 🌙💜✨🐈
                     </p>
 
                 </div>
 
                 <div class="footer">
-                    Espero que goste muito 💜✨🐾🌸
+                    Espero que goste muito 💜✨🐾🌸😺
                 </div>
 
             </div>
@@ -71,16 +71,13 @@
 
 <script>
 
-function mostrarMensagem(){
-
-    document.getElementById("inicio").style.display = "none";
-    document.getElementById("mensagem").style.display = "block";
+function criarPatinhas(){
 
     for(let i = 0; i < 60; i++){
 
         let pata = document.createElement("div");
 
-        pata.innerHTML = "🐾";
+        pata.innerHTML = "🐾😺🐈💜";
 
         pata.classList.add("paw");
 
@@ -95,6 +92,33 @@ function mostrarMensagem(){
     }
 
 }
+
+function mostrarMensagem(){
+
+    document.getElementById("inicio").style.display = "none";
+    document.getElementById("mensagem").style.display = "block";
+
+    criarPatinhas();
+}
+
+document.addEventListener("click", function(e){
+
+    let heart = document.createElement("div");
+
+    heart.innerHTML = "💜💖✨😺";
+
+    heart.classList.add("heart");
+
+    heart.style.left = e.clientX + "px";
+    heart.style.top = e.clientY + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 2000);
+
+});
 
 </script>
 
