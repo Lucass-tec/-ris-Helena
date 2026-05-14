@@ -13,40 +13,83 @@
 
         <div class="container">
 
-            <h1>Íris Helena</h1>
+            <h1>Íris Helena ✨💜🐾</h1>
 
             <p class="subtitle">
-                Uma pessoa incrível, maravilhosa e impossível de não admirar.
+                Uma pessoa incrível, maravilhosa e impossível de não admirar 💖✨
             </p>
 
             <div class="card">
 
-                <h2>Uma homenagem especial 💜</h2>
+                <h2>Uma homenagem especial 💜✨🌙</h2>
 
                 <p>
-                    Existem pessoas que tornam o ambiente mais leve apenas por
-                    estarem presentes. Você é exatamente assim.
+                    Existem pessoas que conseguem deixar tudo melhor apenas
+                    com a própria presença ✨🐾💖
                 </p>
 
                 <p>
-                    Seu jeito, sua dedicação e sua energia fazem diferença
-                    todos os dias.
+                    Seu jeito gentil, sua dedicação e sua energia fazem
+                    diferença mais do que imagina 🌸💜✨
                 </p>
 
                 <p>
-                    Essa página foi criada como uma pequena forma de mostrar
-                    o quanto você é especial.
+                    Pessoas incríveis são raras. E você consegue ser ainda
+                    mais do que isso: admirável, forte, inteligente e maravilhosa 💖✨🐾
+                </p>
+
+                <p>
+                    Essa página é apenas uma pequena forma de mostrar
+                    o quanto você é especial 🌙💜✨
                 </p>
 
             </div>
 
+            <div class="buttons">
+
+                <button onclick="mostrarSurpresa()">
+                    Íris Helena, pronta pra surpresa? ✨💜🐾
+                </button>
+
+                <button onclick="mostrarSurpresa()">
+                    Sim 💜✨🐾
+                </button>
+
+            </div>
+
             <div class="footer">
-                Feito com admiração ✨
+                Espero que goste muito 💜✨🐾🌸
             </div>
 
         </div>
 
     </section>
+
+<script>
+
+function mostrarSurpresa(){
+
+    for(let i = 0; i < 40; i++){
+
+        let pata = document.createElement("div");
+
+        pata.innerHTML = "🐾";
+
+        pata.classList.add("paw");
+
+        pata.style.left = Math.random() * window.innerWidth + "px";
+        pata.style.top = Math.random() * window.innerHeight + "px";
+
+        document.body.appendChild(pata);
+
+        setTimeout(() => {
+            pata.remove();
+        }, 3000);
+    }
+
+}
+
+</script>
 
 </body>
 </html>
