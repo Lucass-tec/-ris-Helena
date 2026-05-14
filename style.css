@@ -94,6 +94,14 @@ button:hover{
     z-index: 999;
 }
 
+.heart{
+    position: fixed;
+    font-size: 30px;
+    pointer-events: none;
+    animation: heartAnim 2s linear forwards;
+    z-index: 999;
+}
+
 @keyframes subir{
 
     0%{
@@ -104,6 +112,20 @@ button:hover{
     100%{
         opacity: 0;
         transform: translateY(-200px) scale(1.8);
+    }
+
+}
+
+@keyframes heartAnim{
+
+    0%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(-120px) scale(1.8);
     }
 
 }
